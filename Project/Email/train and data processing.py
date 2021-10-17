@@ -35,7 +35,7 @@ print(spam_matrix,'\n\b')
 
 print(np.array(text_matrix).shape, np.array(spam_matrix).shape)
 
-# split it for train
+# split dataset i.e. test_matrix and spam_matrix for train
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(text_matrix, spam_matrix, test_size = 0.002)
 print(y_train[:10])
